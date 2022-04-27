@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+*{
+    font-family: 'Nunito', sans-serif;
+}
+.a{
+    font-family: 'Nunito';
+    
+}
+
+.card-own .icons-i{
+    display: none;
+    transition-duration: 1s;
+  z-index: 1;
+  width: 70%;
+  
+}
+.card-own .icons-i i{
+
+    border: solid 2px white;
+    padding: 7px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+.card-own .icons-i {
+     
+    border-radius: 100%;
+    transition-duration: 300px; 
+   
+}
+
+ .card-own .icons-i i:hover{
+    background-color: white;
+    color: black;
+}
+.card-own:hover .icons-i{
+    display: block;
+    z-index: 2;
+} 
+
+.card-own img{
+    overflow: hidden;
+}
+.card-own{
+    position: relative;
+    z-index: 1;
+    overflow: hidden;  
+ 
+}
+.card-own::before{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    background-color: #42b3c48a;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transition-duration: 200ms;
+}
+.card-own:hover::before{
+    opacity: 1;
+}
+
+.fa-twitter, .fa-facebook, .fa-linkedin{
+    color: white;
+}
+
+.fixd{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border-radius: 50%; 
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+ .icon i {
+  color: black;
+ }
+ .icon-a{
+     width: 60%;
+ }
+ .info{
+     background-color: #F8F9FA;
+ }
+ .icons-icon a i{
+    border: solid 2px white;
+    padding: 7px;
+    border-radius: 50%;
+    font-size: 20px;
+    transition-duration: 200ms;
+ }
+.icons-icon .fa-youtube{
+    color: #17A2B8;
+}
+.icons-icon a i:hover{
+    background-color: #17A2B8;
+    color: white;
+    z-index: 1;
+}
+
+
+ .bg-color{
+     background-color: #00394F;
+      border-bottom: 1px solid white;
+      
+ }
+    
+ .kin .fa-youtube, .icon-footers, .fa-youtube, .fa-map, .fa-phone{
+     color: #17A2B8;
+ }
+
+ .footer a{
+     padding-left: 10px;
+     text-decoration: none;
+     color: white;
+ }
+ 
+   .footer a:hover{
+       text-decoration: underline;
+   }
+   .balandlik{
+       height: 10vh;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       color: white;
+       background-color: #00394F;
+      
+   }
+   .al{
+       color: #17A2B8;
+       font-weight: bold;
+   }
+   
+   .header-a span:hover{
+    text-decoration: underline;
+   }
+   .header-a{
+       height: 70vh;
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+   }
+   .header-a h1{
+       font-size: 140px; 
+       font-weight: bold;
+
+   }
+
+ input{
+     display: none;
+ }
+ .rasmlar .img::before{
+    content: "Alisher";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+    margin-top: -120px;
+    opacity: 0;
+    transition-duration: 1s;
+    color: white;
+    z-index: 1;
+
+    
+}
+.img:hover::before{
+    opacity: 1;
+    margin-top: 0;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.rasmlar{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+}
+.img{
+    height: 100%;
+    width: 100%
+}
+
+#rasm1:checked ~  .container .rasmlar  img{
+    opacity: 1;
+    position: relative;
+} 
+
+#rasm2:checked ~ .container .rasmlar .playing{
+    opacity: 1;
+    position: relative;
+
+}
+#rasm2:checked ~ .container .rasmlar .reading,
+#rasm2:checked ~ .container .rasmlar .drawing{
+    opacity: 0;
+    position: absolute;
+}
+#rasm3:checked ~ .container .rasmlar .reading{
+    opacity: 1;
+    position: relative;
+
+}
+#rasm3:checked ~ .container .rasmlar .playing,
+#rasm3:checked ~ .container .rasmlar .drawing{
+    opacity: 0;
+    position: absolute;
+}
+#rasm4:checked ~ .container .rasmlar .drawing{
+    opacity: 1;
+    position: relative;
+
+}
+#rasm4:checked ~ .container .rasmlar .reading,
+#rasm4:checked ~ .container .rasmlar .playing{
+    opacity: 0;
+    position: absolute;
+}  
+  .icon-btn{
+    opacity: 0.3;
+    background-color: #0DCAF0;
+   }
+   
+   .okey-btn:hover .icon-btn{
+          opacity: 1;
+   }
+   .icon-btn:hover{
+       background-color: #17A2B8;
+       color: white;
+   }
+   .a{
+            background-color: #F8F9FA;
+   }

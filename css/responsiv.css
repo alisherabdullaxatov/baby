@@ -1,0 +1,26 @@
+@media screen and (min-width: 300px) and (max-width: 991px){
+    .header-middil{
+        text-align: center;
+        
+    }
+    .btn-bt{
+        border-radius: 30px;
+    }
+    .pa{
+        padding: 40px;
+    }
+    .left-nav-bar{
+        display: flex;
+        justify-content: end;
+    }
+    .about-n1{
+        text-align: center;
+    }
+    .hr-r{
+       display: none;
+    }
+   .ab{
+       text-align: center;
+   }
+   
+}
